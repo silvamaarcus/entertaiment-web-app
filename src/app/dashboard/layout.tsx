@@ -3,9 +3,9 @@ import Sidebar from "./components/Sidebar";
 
 const Dashboard = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col sm:flex-row">
       <Sidebar />
-      <main className="p-6">{children}</main>
+      <main className="px-6 py-8 sm:px-9">{children}</main>
     </div>
   );
 };

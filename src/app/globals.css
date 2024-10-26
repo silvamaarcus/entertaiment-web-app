@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #161D2F;
+  --background: #161d2f;
   --foreground: #ffffff;
   --primary: #fc4747;
   --greyishBlue: #5a698f;
@@ -12,7 +12,7 @@
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: var(--darkBlue) !important;
 }
 
 .custom-input {

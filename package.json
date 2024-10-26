@@ -9,8 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
     "@hookform/resolvers": "^3.9.0",
+    "@mui/icons-material": "^6.1.5",
+    "@mui/material": "^6.1.5",
     "@next/font": "^14.2.15",
+    "@nextui-org/avatar": "^2.0.33",
     "@nextui-org/button": "^2.0.38",
     "@nextui-org/card": "^2.0.34",
     "@nextui-org/input": "^2.2.5",

@@ -4,7 +4,7 @@ import { Outfit } from "next/font/google";
 
 const outfitSans = Outfit({
   subsets: ["latin"],
-  weight: ["100", "900"], // Pesos da fonte
+  weight: ["100", "300", "400", "500", "900"], // Pesos da fonte
 });
 
 export const metadata: Metadata = {

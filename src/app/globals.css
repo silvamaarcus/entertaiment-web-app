@@ -3,11 +3,25 @@
 @tailwind utilities;
 
 :root {
-  --background: #10141e;
+  --background: #161D2F;
   --foreground: #ffffff;
+  --primary: #fc4747;
+  --greyishBlue: #5a698f;
+  --darkBlue: #10141e;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
+}
+
+.custom-input {
+  background: var(--background);
+  color: var(--foreground);
+  border-bottom: 1px solid var(--greyishBlue);
+  font-weight: 200;
+}
+.custom-input:focus {
+  border-bottom: 1px solid var(--foreground);
+  outline: none;
 }

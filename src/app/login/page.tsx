@@ -78,7 +78,7 @@ const LoginPage = () => {
         </CardBody>
         <CardFooter className="flex items-center justify-center gap-2">
           <span className="text-white font-light">Don’t have an account?</span>
-          <Link href="#" className="text-primary font-normal">
+          <Link href="/register" className="text-primary font-normal">
             Sign Up
           </Link>
         </CardFooter>

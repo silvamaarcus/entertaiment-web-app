@@ -25,3 +25,6 @@ body {
   border-bottom: 1px solid var(--foreground);
   outline: none;
 }
+.custom-input-error {
+  border-bottom: 1px solid var(--primary) !important;
+}

@@ -5,7 +5,7 @@ const Dashboard = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="flex flex-col sm:flex-row">
       <Sidebar />
-      <main className="px-6 py-8 sm:px-9">{children}</main>
+      <main className="px-6 py-8 sm:px-1 w-full">{children}</main>
     </div>
   );
 };

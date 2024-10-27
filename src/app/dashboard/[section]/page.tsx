@@ -1,11 +1,12 @@
 import React from "react";
+import SectionHome from "./pages/SectionHome";
 
 type SectionPageProps = {
   params: { section: string };
 };
 
 function HomeContent() {
-  return <div>Conteúdo da Home</div>;
+  return <SectionHome />;
 }
 
 function BookmarkContent() {

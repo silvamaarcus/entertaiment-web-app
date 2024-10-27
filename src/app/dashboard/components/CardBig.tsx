@@ -44,7 +44,7 @@ const CardBig = ({ src, alt, title, description }: CardBigProps) => {
         width={240}
         height={140}
       />
-      <CardHeader className="relative z-10 flex items-center justify-end p-2">
+      <CardHeader className="relative z-10 flex items-center justify-end p-6">
         <BookmarkBorderIcon className="w-8 h-8 p-1 rounded-full bg-neutral-800/50" />
       </CardHeader>
       <CardBody className="relative z-10 flex items-center justify-center p-0">
@@ -55,7 +55,7 @@ const CardBig = ({ src, alt, title, description }: CardBigProps) => {
           </Button>
         )}
       </CardBody>
-      <CardFooter className="relative z-10 flex flex-col items-start justify-center p-4 bg-gradient-to-t from-black/80 to-transparent">
+      <CardFooter className="relative z-10 flex flex-col items-start justify-center p-6 bg-gradient-to-t from-black/80 to-transparent">
         <div className="flex items-center gap-2 text-xs sm:text-sm text-white/80">
           <span>{description?.year ?? "N/A"}</span>
           <span>°</span>

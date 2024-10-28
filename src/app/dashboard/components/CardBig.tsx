@@ -44,7 +44,7 @@ const CardBig = ({ src, alt, title, description }: CardBigProps) => {
         width={240}
         height={140}
       />
-      <CardHeader className="relative z-10 flex items-center justify-end p-6">
+      <CardHeader className="relative z-10 flex items-center justify-end sm:p-6">
         <BookmarkBorderIcon className="w-8 h-8 p-1 rounded-full bg-neutral-800/50" />
       </CardHeader>
       <CardBody className="relative z-10 flex items-center justify-center p-0">

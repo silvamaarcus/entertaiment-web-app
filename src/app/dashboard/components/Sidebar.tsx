@@ -13,7 +13,7 @@ const Sidebar = () => {
   return (
     <>
       {/* Desktop */}
-      <aside className="w-24 rounded-[20px] m-8 bg-background items-center justify-center hidden sm:flex h-screen">
+      <aside className="w-24 rounded-[20px] m-8 bg-background items-center justify-center hidden sm:flex h-screen flex-shrink-0">
         <nav className="flex flex-col items-center justify-between h-full py-9">
           <div className="flex flex-col items-center justify-center gap-20">
             <div>

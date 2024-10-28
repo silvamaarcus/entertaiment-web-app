@@ -15,13 +15,13 @@ body {
   background: var(--darkBlue) !important;
 
   &::-webkit-scrollbar {
-    padding-right: 4px;
-    width: 10px;
+    padding-right: 0.25rem;
+    width: 0.625rem;
     background: var(--background);
   }
 
   &::-webkit-scrollbar-thumb {
-    border-radius: 8px;
+    border-radius: 0.5rem;
     background: var(--greyishBlue);
   }
 }
@@ -40,3 +40,14 @@ body {
 .custom-input-error {
   border-bottom: 1px solid var(--primary) !important;
 }
+
+/* Para ocultar a barra de rolagem em navegadores baseados em WebKit (Chrome, Safari) */
+.custom-scrollbar::-webkit-scrollbar {
+  background: var(--darkBackground);
+  height: 0.625rem;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--background);
+  border-radius: 0.5rem;
+}
+

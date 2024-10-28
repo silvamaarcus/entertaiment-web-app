@@ -1,14 +1,11 @@
 "use client";
 
 import React from "react";
-// Validação de formulário usando Zod
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-// Importação de componentes do NextUI
 import { Button } from "@nextui-org/button";
 import { Card, CardBody, CardFooter, CardHeader } from "@nextui-org/card";
-
 import Link from "next/link";
 
 // Define validação usando Zod
@@ -17,18 +14,21 @@ const loginSchema = z.object({
   password: z.string().nonempty("Can’t be empty"),
 });
 
+// Define o tipo para os dados do formulário
+type LoginFormInputs = z.infer<typeof loginSchema>;
+
 const LoginPage = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm({
+  } = useForm<LoginFormInputs>({
     resolver: zodResolver(loginSchema),
   });
 
-  const onSubmit = (data: any) => {
+  const onSubmit = (data: LoginFormInputs) => {
     console.log(data);
-    // Add lógica de autenticação aqui
+    // Adicione a lógica de autenticação aqui
   };
 
   return (
@@ -45,7 +45,9 @@ const LoginPage = () => {
             <div className="flex flex-col gap-2 relative">
               <input
                 type="text"
-                className={`custom-input py-2 pl-4 pr-8 ${errors.email ? 'custom-input-error' : ''}`}
+                className={`custom-input py-2 pl-4 pr-8 ${
+                  errors.email ? "custom-input-error" : ""
+                }`}
                 placeholder="Email address"
                 {...register("email")}
               />
@@ -58,7 +60,9 @@ const LoginPage = () => {
             <div className="relative flex flex-col gap-2">
               <input
                 type="password"
-                className={`custom-input py-2 pl-4 pr-8 ${errors.password ? 'custom-input-error' : ''}`}
+                className={`custom-input py-2 pl-4 pr-8 ${
+                  errors.password ? "custom-input-error" : ""
+                }`}
                 placeholder="Password"
                 {...register("password")}
               />

@@ -38,17 +38,17 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-slate-950">
-      <Card className="p-8 bg-slate-700 w-[400px] mx-4 sm:mx-0 bg-background">
-        <CardHeader className="text-white text-3xl font-normal">
+    <div className="flex min-h-screen items-center justify-center bg-slate-950">
+      <Card className="mx-4 w-[400px] bg-background bg-slate-700 p-8 sm:mx-0">
+        <CardHeader className="text-3xl font-normal text-white">
           Login
         </CardHeader>
         <CardBody className="flex flex-col gap-4">
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="flex flex-col gap-4 w-full"
+            className="flex w-full flex-col gap-4"
           >
-            <div className="flex flex-col gap-2 relative">
+            <div className="relative flex flex-col gap-2">
               <input
                 type="text"
                 className={`custom-input py-2 pl-4 pr-8 ${errors.email ? "custom-input-error" : ""}`}
@@ -56,7 +56,7 @@ const LoginPage = () => {
                 {...register("email")}
               />
               {errors.email && (
-                <span className="absolute right-4 top-1/2 transform -translate-y-1/2 text-primary text-sm font-extralight">
+                <span className="absolute right-4 top-1/2 -translate-y-1/2 transform text-sm font-extralight text-primary">
                   {errors.email.message as string}
                 </span>
               )}
@@ -69,7 +69,7 @@ const LoginPage = () => {
                 {...register("password")}
               />
               {errors.password && (
-                <span className="absolute right-4 top-1/2 transform -translate-y-1/2 text-primary text-sm font-extralight">
+                <span className="absolute right-4 top-1/2 -translate-y-1/2 transform text-sm font-extralight text-primary">
                   {errors.password.message as string}
                 </span>
               )}
@@ -82,24 +82,24 @@ const LoginPage = () => {
                 {...register("confirmPassword")}
               />
               {errors.confirmPassword && (
-                <span className="absolute right-4 top-1/2 transform -translate-y-1/2 text-primary text-sm font-extralight">
+                <span className="absolute right-4 top-1/2 -translate-y-1/2 transform text-sm font-extralight text-primary">
                   {errors.confirmPassword.message as string}
                 </span>
               )}
             </div>
             <Button
               type="submit"
-              className="mt-5 rounded-md bg-primary text-white text-base font-normal cursor-pointer"
+              className="mt-5 cursor-pointer rounded-md bg-primary text-base font-normal text-white"
             >
               Create an account
             </Button>
           </form>
         </CardBody>
         <CardFooter className="flex items-center justify-center gap-2">
-          <span className="text-white font-light">
+          <span className="font-light text-white">
             Already have an account?
           </span>
-          <Link href="/login" className="text-primary font-normal">
+          <Link href="/login" className="font-normal text-primary">
             Login
           </Link>
         </CardFooter>

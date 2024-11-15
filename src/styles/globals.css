@@ -3,16 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --background: #161d2f;
+  --background: #10141E;
   --foreground: #ffffff;
   --primary: #fc4747;
   --greyishBlue: #5a698f;
-  --darkBlue: #10141e;
+  --darkBlue: #161D2F;
 }
 
 body {
   color: var(--foreground);
-  background: var(--darkBlue) !important;
+  background: var(--background) !important;
 
   &::-webkit-scrollbar {
     padding-right: 0.25rem;
@@ -27,7 +27,7 @@ body {
 }
 
 .custom-input {
-  background: var(--darkBlue);
+  background: transparent;
   color: var(--foreground);
   border-bottom: 1px solid var(--greyishBlue);
   font-weight: 200;

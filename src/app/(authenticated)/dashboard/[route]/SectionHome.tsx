@@ -83,9 +83,9 @@ const SectionHome = () => {
           />
         </div>
 
-        <div className="mt-6 sm:mt-10">
+        <div className="mt-6 px-2 sm:mt-10">
           <h1 className="text-xl font-light sm:text-3xl">Trending</h1>
-          <div className="custom-scrollbar my-4 flex w-screen items-center gap-4 overflow-x-auto px-2 sm:my-6 sm:gap-10">
+          <div className="custom-scrollbar my-4 flex w-screen items-center gap-4 overflow-x-auto sm:my-6 sm:gap-10">
             {cardsBig.slice(0, 6).map((card, index) => (
               <div key={index}>
                 <CardBig
@@ -102,7 +102,7 @@ const SectionHome = () => {
 
       <section className="mt-6 w-full overflow-hidden sm:mt-10">
         <h1 className="text-xl font-light sm:text-3xl">Recommended for you</h1>
-        <div className="my-6 grid grid-cols-2 gap-4 px-2 sm:grid-cols-4 sm:gap-10">
+        <div className="my-6 grid grid-cols-2 gap-4 sm:grid-cols-4 sm:gap-10">
           {cardsBig.slice(0, 12).map((card, index) => (
             <div key={index}>
               <CardSmall

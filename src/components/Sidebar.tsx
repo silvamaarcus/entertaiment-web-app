@@ -49,28 +49,28 @@ const Sidebar = () => {
               </Link>
             </div>
             <ul className="flex flex-col items-center justify-center gap-5">
-              <li onClick={() => handleButtonClick("home")}>
+              <li onClick={() => handleButtonClick("home")} className="cursor-pointer">
                 <WindowIcon
                   htmlColor="var(--greyishBlue)"
                   className="transition-all hover:text-primary"
                 />
               </li>
 
-              <li onClick={() => handleButtonClick("movies")}>
+              <li onClick={() => handleButtonClick("movies")} className="cursor-pointer">
                 <LocalMoviesIcon
                   htmlColor="var(--greyishBlue)"
                   className="transition-all hover:text-primary"
                 />
               </li>
 
-              <li onClick={() => handleButtonClick("series")}>
+              <li onClick={() => handleButtonClick("series")} className="cursor-pointer">
                 <LiveTvIcon
                   htmlColor="var(--greyishBlue)"
                   className="transition-all hover:text-primary"
                 />
               </li>
 
-              <li onClick={() => handleButtonClick("bookmark")}>
+              <li onClick={() => handleButtonClick("bookmark")} className="cursor-pointer">
                 <BookmarkIcon
                   htmlColor="var(--greyishBlue)"
                   className="transition-all hover:text-primary"
@@ -79,7 +79,7 @@ const Sidebar = () => {
             </ul>
           </div>
 
-          <div>
+          <div className="cursor-pointer">
             <Avatar
               isBordered
               src="https://i.pravatar.cc/150?u=a042581f4e29026024d"

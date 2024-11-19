@@ -8,7 +8,7 @@ import CardBig from "@/components/CardBig";
 import CardSmall from "@/components/CardSmall";
 
 const SectionHome = () => {
-  const cards = [
+  const cardsBig = [
     {
       src: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
       alt: "image 1",
@@ -83,10 +83,10 @@ const SectionHome = () => {
           />
         </div>
 
-        <div className="mt-6 border border-red-400 sm:mt-10">
+        <div className="mt-6 sm:mt-10">
           <h1 className="text-xl font-light sm:text-3xl">Trending</h1>
-          <div className="custom-scrollbar my-4 flex w-screen items-center gap-4 overflow-x-auto border sm:my-6 sm:gap-10">
-            {cards.slice(0, 6).map((card, index) => (
+          <div className="custom-scrollbar my-4 flex w-screen items-center gap-4 overflow-x-auto px-2 sm:my-6 sm:gap-10">
+            {cardsBig.slice(0, 6).map((card, index) => (
               <div key={index}>
                 <CardBig
                   src={card.src}
@@ -100,15 +100,14 @@ const SectionHome = () => {
         </div>
       </section>
 
-      <section className="mt-6 overflow-hidden sm:mt-10">
+      <section className="mt-6 w-full overflow-hidden sm:mt-10">
         <h1 className="text-xl font-light sm:text-3xl">Recommended for you</h1>
-        <div className="my-6 grid grid-cols-2 gap-4 sm:grid-cols-4">
-          {/* <div className="my-6 flex items-center gap-4"> */}
-          {cards.map((card, index) => (
-            <div className="border" key={index}>
+        <div className="my-6 grid grid-cols-2 gap-4 px-2 sm:grid-cols-4 sm:gap-10">
+          {cardsBig.slice(0, 12).map((card, index) => (
+            <div key={index}>
               <CardSmall
-                src={card.src}
                 alt={card.alt}
+                src={card.src}
                 title={card.title}
                 description={card.description}
               />

@@ -140,7 +140,7 @@ const Sidebar = () => {
       </aside>
 
       {/* Conteudo dinamico */}
-      <main className="flex-1 p-6 overflow-hidden">
+      <main className="py-6 overflow-hidden">
         {routeContent[activeRoute]}
       </main>
     </>

@@ -23,14 +23,14 @@ const CardSmall = ({ src, alt, title, description }: CardSmallProps) => {
   const [isHovered, setIsHovered] = useState<boolean>(false);
 
   return (
-    <div className="relative">
+    <div className="relative w-full">
       <div
         className="relative"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
         {/* Image */}
-        <Image width={280} alt={alt} src={src} className="relative" />
+        <Image className="h-auto w-full" alt={alt} src={src} />
 
         {/* Mask */}
         {isHovered && (

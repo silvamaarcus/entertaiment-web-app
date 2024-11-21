@@ -20,8 +20,7 @@ An interactive and responsive entertainment web app created with **React**, **Ne
 
 ## 🌐 Live Demo
 
-You can access the live version of the project at:  
-[**Deploy**](#)
+You can access the live version of the project at: [**Deploy**](https://entertaiment-web-app-chi.vercel.app/)
 
 ## 🖼️ Screenshots
 

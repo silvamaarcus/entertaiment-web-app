@@ -38,10 +38,10 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-slate-950">
-      <Card className="mx-4 w-[400px] bg-background bg-slate-700 p-8 sm:mx-0">
+    <div className="flex min-h-screen items-center justify-center">
+      <Card className="mx-4 w-[400px] bg-darkBackground p-8 sm:mx-0">
         <CardHeader className="text-3xl font-normal text-white">
-          Login
+          Register
         </CardHeader>
         <CardBody className="flex flex-col gap-4">
           <form

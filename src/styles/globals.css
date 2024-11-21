@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --background: #10141E;
+  --background: #10141e;
   --foreground: #ffffff;
   --primary: #fc4747;
   --greyishBlue: #5a698f;
-  --darkBlue: #161D2F;
+  --darkBlue: #161d2f;
 }
 
 body {
@@ -50,3 +50,26 @@ body {
   border-radius: 0.5rem;
 }
 
+// Swipper
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+/* .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #1a1a1a;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */

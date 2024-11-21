@@ -24,7 +24,8 @@ const CardBig = ({ src, alt, title, description }: CardBigProps) => {
 
   return (
     <Card
-      className="group relative h-[140px] w-[240px] cursor-pointer overflow-hidden rounded-lg shadow-lg sm:h-[300px] sm:w-[470px]"
+      // className="group relative h-[140px] w-[240px] cursor-pointer overflow-hidden rounded-lg shadow-lg sm:h-[300px] sm:w-[470px]"
+      className="group relative h-full w-full cursor-pointer overflow-hidden rounded-lg shadow-lg"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >

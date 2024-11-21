@@ -11,6 +11,7 @@ import BookmarkIcon from "@mui/icons-material/Bookmark";
 
 import { Avatar } from "@nextui-org/avatar";
 import SectionHome from "@/app/(authenticated)/dashboard/[route]/SectionHome";
+import SectionMovies from "@/app/(authenticated)/dashboard/[route]/SectionMovies";
 
 interface RouteContent {
   [key: string]: JSX.Element;
@@ -25,7 +26,11 @@ const Sidebar = () => {
         <SectionHome />
       </div>
     ),
-    movies: <div>Explore Movies</div>,
+    movies: (
+      <div>
+        <SectionMovies />
+      </div>
+    ),
     series: <div>Discover Series</div>,
     bookmark: <div>View Bookmarked Items</div>,
   };
@@ -49,28 +54,40 @@ const Sidebar = () => {
               </Link>
             </div>
             <ul className="flex flex-col items-center justify-center gap-5">
-              <li onClick={() => handleButtonClick("home")} className="cursor-pointer">
+              <li
+                onClick={() => handleButtonClick("home")}
+                className="cursor-pointer"
+              >
                 <WindowIcon
                   htmlColor="var(--greyishBlue)"
                   className="transition-all hover:text-primary"
                 />
               </li>
 
-              <li onClick={() => handleButtonClick("movies")} className="cursor-pointer">
+              <li
+                onClick={() => handleButtonClick("movies")}
+                className="cursor-pointer"
+              >
                 <LocalMoviesIcon
                   htmlColor="var(--greyishBlue)"
                   className="transition-all hover:text-primary"
                 />
               </li>
 
-              <li onClick={() => handleButtonClick("series")} className="cursor-pointer">
+              <li
+                onClick={() => handleButtonClick("series")}
+                className="cursor-pointer"
+              >
                 <LiveTvIcon
                   htmlColor="var(--greyishBlue)"
                   className="transition-all hover:text-primary"
                 />
               </li>
 
-              <li onClick={() => handleButtonClick("bookmark")} className="cursor-pointer">
+              <li
+                onClick={() => handleButtonClick("bookmark")}
+                className="cursor-pointer"
+              >
                 <BookmarkIcon
                   htmlColor="var(--greyishBlue)"
                   className="transition-all hover:text-primary"
@@ -140,9 +157,7 @@ const Sidebar = () => {
       </aside>
 
       {/* Conteudo dinamico */}
-      <main className="py-6 overflow-hidden">
-        {routeContent[activeRoute]}
-      </main>
+      <main className="overflow-hidden py-6">{routeContent[activeRoute]}</main>
     </>
   );
 };

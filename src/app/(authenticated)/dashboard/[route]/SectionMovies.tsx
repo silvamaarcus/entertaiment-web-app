@@ -1,9 +1,11 @@
-import React from "react";
+import GridTitlesSM from "@/components/GridTitles";
+import InputMaster from "@/components/InputMaster";
 
 const SectionMovies = () => {
   return (
     <div>
-      <h1>Essa é a pagina de filmes!!!</h1>
+      <InputMaster placeholder="Search for movies" />
+      <GridTitlesSM title="Movies" />
     </div>
   );
 };

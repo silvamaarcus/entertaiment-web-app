@@ -29,12 +29,11 @@ body {
 .custom-input {
   background: transparent;
   color: var(--foreground);
-  border-bottom: 1px solid var(--greyishBlue);
   font-weight: 200;
   width: 100%;
 }
 .custom-input:focus {
-  border-bottom: 1px solid var(--foreground);
+  border-bottom: 1px solid var(--greyishBlue);
   outline: none;
 }
 .custom-input-error {

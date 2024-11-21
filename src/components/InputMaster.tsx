@@ -8,11 +8,11 @@ export interface InputMasterProps {
 
 const InputMaster = ({ placeholder, type, className }: InputMasterProps) => {
   return (
-    <div className="flex items-center gap-4 pr-2 sm:mt-2 sm:gap-6">
+    <div className="flex items-center gap-3 pr-2 sm:mt-2">
       <SearchIcon className="mt-2 h-8 w-8" />
       <input
         type={type}
-        className={`custom-input py-2 pl-4 ${className}`}
+        className={`custom-input p-2 ${className}`}
         placeholder={placeholder}
       />
     </div>

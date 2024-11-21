@@ -12,6 +12,8 @@ import BookmarkIcon from "@mui/icons-material/Bookmark";
 import { Avatar } from "@nextui-org/avatar";
 import SectionHome from "@/app/(authenticated)/dashboard/[route]/SectionHome";
 import SectionMovies from "@/app/(authenticated)/dashboard/[route]/SectionMovies";
+import SectionSeries from "@/app/(authenticated)/dashboard/[route]/SectionSeries";
+import SectionBookmark from "@/app/(authenticated)/dashboard/[route]/SectionBookmark";
 
 interface RouteContent {
   [key: string]: JSX.Element;
@@ -31,8 +33,16 @@ const Sidebar = () => {
         <SectionMovies />
       </div>
     ),
-    series: <div>Discover Series</div>,
-    bookmark: <div>View Bookmarked Items</div>,
+    series: (
+      <div>
+        <SectionSeries />
+      </div>
+    ),
+    bookmark: (
+      <div>
+        <SectionBookmark />
+      </div>
+    ),
   };
 
   const handleButtonClick = (route: string) => {

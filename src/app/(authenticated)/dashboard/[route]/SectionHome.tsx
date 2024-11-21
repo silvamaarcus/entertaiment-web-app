@@ -6,6 +6,7 @@ import SearchIcon from "@mui/icons-material/Search";
 
 import CardBig from "@/components/CardBig";
 import CardSmall from "@/components/CardSmall";
+import InputMaster from "@/components/InputMaster";
 
 const SectionHome = () => {
   const cardsBig = [
@@ -74,14 +75,7 @@ const SectionHome = () => {
   return (
     <>
       <section>
-        <div className="flex items-center gap-4 sm:mt-2 sm:gap-6">
-          <SearchIcon className="mt-2 h-8 w-8" />
-          <input
-            type="text"
-            className="custom-input py-2 pl-4"
-            placeholder="Search for movies or TV series"
-          />
-        </div>
+        <InputMaster placeholder="Search for movies or TV series" />
 
         <div className="mt-6 px-2 sm:mt-10">
           <h1 className="text-xl font-light sm:text-3xl">Trending</h1>
@@ -100,7 +94,7 @@ const SectionHome = () => {
         </div>
       </section>
 
-      <section className="mt-6 w-full overflow-hidden sm:mt-10">
+      <section className="mt-6 w-full overflow-hidden px-2 sm:mt-10">
         <h1 className="text-xl font-light sm:text-3xl">Recommended for you</h1>
         <div className="my-6 grid grid-cols-2 gap-4 sm:grid-cols-4 sm:gap-10">
           {cardsBig.slice(0, 12).map((card, index) => (

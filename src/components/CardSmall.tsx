@@ -66,7 +66,7 @@ const CardSmall = ({ src, alt, title, description }: CardSmallProps) => {
           <span>°</span>
           <span>{description?.classification ?? "N/A"}</span>
         </div>
-        <span className="text-base font-normal text-white sm:text-2xl">
+        <span className="text-base font-normal text-white sm:text-lg">
           {title}
         </span>
       </div>

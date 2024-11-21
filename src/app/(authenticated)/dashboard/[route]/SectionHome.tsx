@@ -7,6 +7,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import CardBig from "@/components/CardBig";
 import CardSmall from "@/components/CardSmall";
 import InputMaster from "@/components/InputMaster";
+import GridTitlesSM from "@/components/GridTitles";
 
 const SectionHome = () => {
   const cardsBig = [
@@ -94,21 +95,7 @@ const SectionHome = () => {
         </div>
       </section>
 
-      <section className="mt-6 w-full overflow-hidden px-2 sm:mt-10">
-        <h1 className="text-xl font-light sm:text-3xl">Recommended for you</h1>
-        <div className="my-6 grid grid-cols-2 gap-4 sm:grid-cols-4 sm:gap-10">
-          {cardsBig.slice(0, 12).map((card, index) => (
-            <div key={index}>
-              <CardSmall
-                alt={card.alt}
-                src={card.src}
-                title={card.title}
-                description={card.description}
-              />
-            </div>
-          ))}
-        </div>
-      </section>
+      <GridTitlesSM title="Recommended for you" />
     </>
   );
 };
